@@ -28,7 +28,7 @@ class Solution:
                 elif s == target:
                     res.append([nums[low], nums[high]])
                     low += 1
-                    high += 1
+                    high -= 1
             return res
 
         nums.sort()
