@@ -1,3 +1,3 @@
 # Leetcode
-
-This idea is inspired by a full stack developer [Tim Baker](https://github.com/tbakerx). I should have a repository to record my passed submissions in Leetcode.
+This repository keeps track of my algorithm and data structure coding practices in Leetcode. Here's my [Leetcode profile](https://leetcode.com/rushuifang/)!
+Happy coding!
