@@ -13,3 +13,20 @@ class Solution(object):
                 ans[i] = idx - i
             nxt[T[i]] = i
         return ans
+
+# stack
+class Solution:
+    def dailyTemperatures(self, T: List[int]) -> List[int]:
+        res = [0 for _ in range(len(T))]
+        stack = []
+        
+        for i in range((len(T) - 1), -1, -1):
+            while stack and T[stack[-1]] <= T[i]:
+                stack.pop()
+            if stack == []:
+                res[i] = 0
+            else:
+                res[i] = stack[-1] - i
+            stack.append(i)
+        
+        return res
